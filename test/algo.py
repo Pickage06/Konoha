@@ -51,6 +51,6 @@ def rand_cand(cand):
 ##Add their randoms to the table##
 def add_vote(table):
   for _ in range(0,VOTES):
-  mention = (rand_vote(Mentions))
-  candidate = (rand_cand(Candidates))
+    mention = (rand_vote(Mentions))
+    candidate = (rand_cand(Candidates))
 
