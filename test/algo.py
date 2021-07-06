@@ -12,7 +12,7 @@ import random
 #random.seed(0)
 
 ##Create number votes##
-VOTES = 10000
+VOTES = 1000
 
 ##create a dictionnary for candidates##
 Candidates = {
@@ -49,8 +49,24 @@ def rand_cand(cand):
   return cand
 
 ##Add their randoms to the table##
+#Take result of rand_vote(Mentions)#
+#Take result of rand_cand(Candidates)#
+#Insert their result on a new dictionary{[candidate=mentions]}#
+#Do this for all the range(credential)#
 def add_vote(table):
   for _ in range(0,VOTES):
-  mention = (rand_vote(Mentions))
-  candidate = (rand_cand(Candidates))
+    mention = (rand_vote(Mentions))
+    candidate = (rand_cand(Candidates))
+  
+##Calculate the number's votes by candidate##
+#Take result of add_vote(table)#
+#Analyse on the new dictionnary the number of candidates'values#
+#Compare this notes with all candidates and the number of votes(1000)#
+#The personn who has the most vote in the better note win#
+
+
+
+
+
+
 
