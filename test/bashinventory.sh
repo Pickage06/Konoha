@@ -9,8 +9,8 @@ echo $a
 ###Find Mac address###
 for param in $a
   do
-    param=sudo arping -c 1 $a 
     echo $param
+    sudo arping -c 1 $param
   done
 #mac=$(sudo arping -c 1 192.168.6.2)
 #echo $mac
