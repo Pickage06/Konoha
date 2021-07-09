@@ -8,7 +8,7 @@ if (test -s $result)
 fi
 
 ###Find IP Address and stock it into a variable###
-ip=$(nmap -sP 192.168.6.0/24 |grep "192.168.6." |awk '{print $6}' |sed 's/(//g' |sed 's/)//g')
+ip=$(nmap -sP 192.168.6.0/24 |grep "192.168.6." |awk '{print $NF}' |sed 's/(//g' |sed 's/)//g')
 
 echo $ip
 
